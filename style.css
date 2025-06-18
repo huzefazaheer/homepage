@@ -121,13 +121,8 @@ h3{
 
 .cardholder{
     margin-top: 6vh;
-    display: flex;
-    justify-content: center;
     padding: 15vh 25vw;
-    flex-wrap: wrap;
-    gap: 30px;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(4, 200px);
+    position: relative;
 }
 
 .techcard .heading{
@@ -142,6 +137,7 @@ h3{
 
 .techcard:hover{
     transform: scale(1.05);
+    /* position: absolute !important; */
 }
 
 #git{
@@ -184,6 +180,8 @@ h3{
     padding: 40px;
     max-width: 340px;
     border-radius: 28px;
+    /* position:absolute; */
+    pointer-events: fill;
 }
 
 h4{
@@ -195,6 +193,7 @@ h4{
 .techcard p{
     margin-top: 2.5vh;
     font-size: 22px;
+    pointer-events: none;
 }
 
 h2{
@@ -242,12 +241,22 @@ h5{
     display: none;
 }
 
+.large{
+    padding: 10vw
+}
+
 .small{
     width: 50px;
     height: 50px;
+    /* position: relative; */
 }
 
 img{
-    user-select: none;
-    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none; /* This should work with this structure */
+}
+
+.aaa{
+    position: inherit;
 }
