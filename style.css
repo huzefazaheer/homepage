@@ -114,6 +114,17 @@ h2{
 
 .projects{
     background-color: #0A0A0A;
+    padding-bottom: 10vh;
+}
+
+.projectcard{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.projecttxt{
+    margin-left: 3vw;
 }
 
 h5{
@@ -124,4 +135,12 @@ h5{
 p{
     font-size: 18px;
     color: #A6A6A6;
+}
+
+.iconholder{
+    margin-top: 20px;
+}
+
+.iconholder img:first-child{
+    margin-right: 10px;
 }
