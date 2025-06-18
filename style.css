@@ -1,0 +1,76 @@
+*{
+    background-color: #0A0A0A;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #ffffff00;
+    border-bottom: 1px solid #414141;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4vh 0;
+    margin: 0;
+    color: #767676;
+}
+
+li{
+    margin-left: 150px;
+}
+
+li:first-of-type{
+    margin-right: auto;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.hero, .technologies{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+h1{
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 20vh;
+    font-weight: 500;
+}
+
+.name{
+    margin: 0;
+    background-image: linear-gradient(to right, #821C32, #4C4298, #9524A8);
+    color: transparent;
+    background-clip: text;
+}
+
+h3{
+    color: #858585;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    margin: 4vh 6vw;
+}
+
+.buttonwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 10vh;
+    margin-bottom: 50vh;
+    padding: 4vh 10vw;
+    background-color: #821C32;
+    border: none;
+    font-size: 1.5rem;
+}
