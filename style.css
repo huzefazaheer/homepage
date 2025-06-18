@@ -16,6 +16,7 @@ nav{
     padding-left: 6vw;
     padding-right: 6vw;
     width: 88vw;
+    z-index: 1000;
     position: fixed;
 }
 
@@ -61,7 +62,7 @@ li:active{
 h1{
     font-size: 6rem;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 25vh;
     font-weight: 500;
     color: white;
 }
@@ -95,7 +96,7 @@ h3{
     user-select: none;
     margin-top: 10vh;
     margin-bottom: 30vh;
-    padding: 4vh 10vw;
+    padding: 3vh 7vw;
     background-color: #821C32;
     border: none;
     font-size: 1.5rem;
@@ -120,7 +121,10 @@ h3{
 
 .cardholder{
     margin-top: 6vh;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    padding: 15vh 25vw;
+    flex-wrap: wrap;
     gap: 30px;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(4, 200px);
@@ -132,40 +136,48 @@ h3{
     justify-content: space-between;
 }
 
+.techcard{
+    transition: all 100ms ease-in;
+}
+
+.techcard:hover{
+    transform: scale(1.05);
+}
+
 #git{
     background-color: #090000;
     color: white;
-    grid-row: 1 / 3;
+    /* grid-row: 1 / 3; */
 }
 
 #js{
     background-color: #F5CB5C;
     color: black;
-    grid-row: 1 / 3;
+    /* grid-row: 1 / 3; */
 }
 
 #webpack{
     background-color: #212D40;
     color: white;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 #node{
     background-color: #678C3A;
     color: white;
-    grid-row: 3 / 4;
+    /* grid-row: 3 / 4; */
 }
 
 #css{
     background-color: #E1AFDF;
     color: black;
-    grid-row: 3 / 4;
+    /* grid-row: 3 / 4; */
 }
 
 #html{
     background-color: #E16969;
     color: white;
-    grid-row: 2 / 4;
+    /* grid-row: 2 / 4; */
 }
 
 .techcard{
@@ -224,4 +236,18 @@ h5{
 
 .iconholder img:first-child{
     margin-right: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.small{
+    width: 50px;
+    height: 50px;
+}
+
+img{
+    user-select: none;
+    pointer-events: none;
 }
