@@ -23,12 +23,23 @@ ul{
 
 li{
     margin-left: 150px;
+    transition: all 50ms ease-in;
+    user-select: none;
 }
 
 li:first-of-type{
     margin-right: auto;
     font-weight: bold;
     margin-left: 0;
+}
+
+li:hover{
+    /* transform: translateY(-4px); */
+    color: #878686;
+}
+
+li:active{
+    transform: translateY(1px);
 }
 
 .hero, .technologies, .projects{
@@ -76,6 +87,19 @@ button{
     background-color: #821C32;
     border: none;
     font-size: 1.5rem;
+    transition: all 100ms ease-in;
+}
+
+button:hover{
+    transform: scale(1.05) translateY(-10px);
+    background-color: #a72743;
+    border-radius: 10px;
+}
+
+button:active{
+    transform: scale(1.06);
+    background-color: #5b1525;
+    border-radius: 10px;
 }
 
 .technologies{
