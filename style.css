@@ -16,9 +16,7 @@ nav{
     padding-left: 6vw;
     padding-right: 6vw;
     width: 88vw;
-    /* position: sticky; */
-
-  position: fixed;
+    position: fixed;
 }
 
 ul{
@@ -117,7 +115,7 @@ h3{
 }
 
 .technologies{
-    background-color: #821C32;
+    background-image: linear-gradient(to bottom, #380B15, #31020C, #21070D);
 }
 
 .cardholder{
@@ -126,6 +124,12 @@ h3{
     gap: 30px;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(4, 200px);
+}
+
+.techcard .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #git{
