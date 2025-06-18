@@ -3,7 +3,7 @@ html{
 }
 
 *{
-    color: white;
+    /* color: white; */
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
@@ -60,6 +60,7 @@ h1{
     text-align: center;
     padding-top: 20vh;
     font-weight: 500;
+    color: white;
 }
 
 .name{
@@ -75,6 +76,7 @@ h3{
     font-size: 2rem;
     text-align: center;
     margin: 4vh 6vw;
+    color: white;
 }
 
 .buttonwrapper{
@@ -85,6 +87,7 @@ h3{
 }
 
 .btndetail{
+    color: white;
     text-decoration: none;
     user-select: none;
     margin-top: 10vh;
@@ -112,7 +115,68 @@ h3{
     background-color: #821C32;
 }
 
+.cardholder{
+    margin-top: 6vh;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 200px);
+}
+
+#git{
+    background-color: #090000;
+    color: white;
+    grid-row: 1 / 3;
+}
+
+#js{
+    background-color: #F5CB5C;
+    color: black;
+    grid-row: 1 / 3;
+}
+
+#webpack{
+    background-color: #212D40;
+    color: white;
+    grid-row: 1 / 2;
+}
+
+#node{
+    background-color: #678C3A;
+    color: white;
+    grid-row: 3 / 4;
+}
+
+#css{
+    background-color: #E1AFDF;
+    color: black;
+    grid-row: 3 / 4;
+}
+
+#html{
+    background-color: #E16969;
+    color: white;
+    grid-row: 2 / 4;
+}
+
+.techcard{
+    padding: 40px;
+    max-width: 340px;
+    border-radius: 28px;
+}
+
+h4{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Fira Code", monospace;
+}
+
+.techcard p{
+    margin-top: 2vh;
+}
+
 h2{
+    color: white;
     font-size: 64px;
     font-weight: 400;
     padding-top: 15vh;
@@ -134,11 +198,12 @@ h2{
 }
 
 h5{
+    color: white;
     font-size: 24px;
     font-weight: 400;
 }
 
-p{
+.projects p{
     font-size: 18px;
     color: #A6A6A6;
 }
