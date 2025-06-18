@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -80,7 +84,9 @@ h3{
     align-items: center;
 }
 
-button{
+.btndetail{
+    text-decoration: none;
+    user-select: none;
     margin-top: 10vh;
     margin-bottom: 30vh;
     padding: 4vh 10vw;
@@ -90,13 +96,13 @@ button{
     transition: all 100ms ease-in;
 }
 
-button:hover{
+.btndetail:hover{
     transform: scale(1.05) translateY(-10px);
     background-color: #a72743;
     border-radius: 10px;
 }
 
-button:active{
+.btndetail:active{
     transform: scale(1.06);
     background-color: #5b1525;
     border-radius: 10px;
