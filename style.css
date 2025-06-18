@@ -10,10 +10,15 @@ html{
 }
 
 nav{
-    background-color: #0A0A0A;
+    background-color: #00000099;
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #414141;
     padding-left: 6vw;
     padding-right: 6vw;
+    width: 88vw;
+    /* position: sticky; */
+
+  position: fixed;
 }
 
 ul{
