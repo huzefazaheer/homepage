@@ -27,37 +27,60 @@ function toggleCard(e){
 
 const shape1 = document.querySelector(".c1")
 const shape2 = document.querySelector(".c2")
-
-let c1posX = 102
-let c1posY = 0
-let c2posX = 402
-let c2posY = 80
-let c1reset = false
-let c2reset = false
+const isSmallScreen = window.matchMedia("(max-width: 1200px)").matches;
+let c1posX
+let c1posY
+let c2posX
+let c2posY
+if(!isSmallScreen){
+c1posX = 6.375
+c1posY = 0
+c2posX = 25.125
+c2posY = 5
+}else{
+c1posX = 0.625
+c1posY = 6.25
+c2posX = 2.5
+c2posY = 37.5
+}
 let i = 0
 function animate(){
     
-    if(i > 100) {
-        c1posX -= 4
-        c1posY -= 4
-        c2posX += 4
-        c2posY += 4
+    if(!isSmallScreen){
+        if(i > 50) {
+        c1posX -= 0.2
+        c1posY -= 0.3
+        c2posX += 0.2
+        c2posY += 0.3
     }else{
-        c1posX += 4
-        c1posY += 4
-        c2posX -= 4
-        c2posY -= 4
+        c1posX += 0.2
+        c1posY += 0.3
+        c2posX -= 0.2
+        c2posY -= 0.3
     }
-    if(i==200) i=0
+    if(i==100) i=0
+    }else{
+        if(i > 50) {
+        c1posX -= 0.063
+        c1posY -= 0.5
+        c2posX += 0.063
+        c2posY += 0.5
+    }else{
+        c1posX += 0.063
+        c1posY += 0.5
+        c2posX -= 0.063
+        c2posY -= 0.5
+    }
+    if(i==100) i=0
+    }
+    
     i++
+    
 
-    shape1.style.left = c1posX +"px"
-    shape1.style.top = c1posY +"px"
-    shape2.style.left = c2posX +"px"
-    shape2.style.top = c2posY +"px"
-    i++
+    shape1.style.left = c1posX +"rem"
+    shape1.style.top = c1posY +"rem"
+    shape2.style.left = c2posX +"rem"
+    shape2.style.top = c2posY +"rem"
 }
 
-// if(i!=20){
-    setInterval(animate, 100)
-// }
+setInterval(animate, 100)
