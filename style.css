@@ -1,5 +1,4 @@
 *{
-    background-color: #0A0A0A;
     color: white;
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -7,7 +6,7 @@
 }
 
 nav{
-    background-color: #ffffff00;
+    background-color: #0A0A0A;
     border-bottom: 1px solid #414141;
     padding-left: 6vw;
     padding-right: 6vw;
@@ -32,15 +31,19 @@ li:first-of-type{
     margin-left: 0;
 }
 
-.hero, .technologies{
-    margin-left: 8vw;
-    margin-right: 8vw;
+.hero, .technologies, .projects{
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.hero{
+    background-color: #0A0A0A;
 }
 
 h1{
     font-size: 6rem;
     text-align: center;
-    margin-top: 20vh;
+    padding-top: 20vh;
     font-weight: 500;
 }
 
@@ -68,9 +71,33 @@ h3{
 
 button{
     margin-top: 10vh;
-    margin-bottom: 50vh;
+    margin-bottom: 30vh;
     padding: 4vh 10vw;
     background-color: #821C32;
     border: none;
     font-size: 1.5rem;
+}
+
+.technologies{
+    background-color: #821C32;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 400;
+    padding-top: 15vh;
+}
+
+.projects{
+    background-color: #0A0A0A;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 18px;
+    color: #A6A6A6;
 }
